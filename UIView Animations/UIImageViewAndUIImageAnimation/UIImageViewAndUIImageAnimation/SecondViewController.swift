@@ -11,10 +11,9 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var button: UIButton!
     
-    
+    //Array to hold images created in code
     var imageArray = [UIImage]()
     
     func createImageArray(){
@@ -49,7 +48,8 @@ class SecondViewController: UIViewController {
         imageView.image = animatedImage
         
         //Animate image from the array using a UIImage class method
-        let im:UIImage = UIImage.animatedImageWithImages(imageArray, duration: 3.0)
+        let im:UIImage = UIImage.animatedImageWithImages(imageArray,
+                                                      duration: 3.0)
         //Set the button image with the animated image im
         button.setImage(im, forState: UIControlState.Normal)
     }

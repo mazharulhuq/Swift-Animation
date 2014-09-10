@@ -38,7 +38,6 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func startAnimation(sender: AnyObject) {
-        
         if repeatCount.text.toInt() == nil{
             repeat = 0
             repeatCount.text = "\(repeat)"
@@ -48,16 +47,16 @@ class FirstViewController: UIViewController {
         }
         //Set imageArray as animationImages
         imageView.animationImages = imageArray
-        //Set imageView animationDuration. It is necessary to convert
-        // currentDuration to NSTimeInterval
-        imageView.animationDuration = NSTimeInterval(currentDuration)
+        //Set imageView animationDuration. It is necessary
+        // to convert currentDuration to NSTimeInterval
+        imageView.animationDuration =
+                           NSTimeInterval(currentDuration)
         //Set animationRepeatCount with repeat
         imageView.animationRepeatCount = repeat
         imageView.startAnimating() //Startanimation
     }
     
     @IBAction func stopAnimation(sender: AnyObject) {
-        
         imageView.stopAnimating()//Stop animation
     }
     
