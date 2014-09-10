@@ -62,7 +62,6 @@ class ViewController: UIViewController {
     }
     
     func animateWithReturn(){
-        
         UIView.animateWithDuration(5.0,animations: {
             var center = self.myView.center
             UIView.performWithoutAnimation({
@@ -78,9 +77,7 @@ class ViewController: UIViewController {
                 self.myView.center = self.originalCenter
                 self.myView.bounds = self.originalBounds
                 self.myView.backgroundColor = self.originalColor
-                
         })
- 
     }
 
     @IBAction func buttonPressed(sender: AnyObject) {
