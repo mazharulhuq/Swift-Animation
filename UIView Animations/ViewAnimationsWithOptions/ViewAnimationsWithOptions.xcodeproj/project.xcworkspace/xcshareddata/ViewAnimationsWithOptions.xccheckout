@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BF61D9FA-FDC1-4EF5-A35C-3C08F3EAAD20</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ViewAnimationsWithOptions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E5ED71987BFD66952324DB73A144FDD0A0952879</key>
+		<string>https://github.com/mazharulhuq/Swift-Animation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UIView Animations/ViewAnimationsWithOptions/ViewAnimationsWithOptions.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E5ED71987BFD66952324DB73A144FDD0A0952879</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mazharulhuq/Swift-Animation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E5ED71987BFD66952324DB73A144FDD0A0952879</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E5ED71987BFD66952324DB73A144FDD0A0952879</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Swift-Animation</string>
+		</dict>
+	</array>
+</dict>
+</plist>
