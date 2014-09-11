@@ -11,7 +11,6 @@ import UIKit
 class SecondViewController: UIViewController {
                             
     @IBOutlet weak var myView: UIView!
-    
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
@@ -25,8 +24,10 @@ class SecondViewController: UIViewController {
     }
     
     override func  viewDidAppear(animated: Bool) {
-        originalPosition = myView.center //Stores myView's initial position
-        originalColor = myView.backgroundColor //Stores myView's initial background color
+        //Stores myView's initial position
+        originalPosition = myView.center
+        //Stores myView's initial background color
+        originalColor = myView.backgroundColor
         cancelButton.enabled = false //Disables cancelButton
     }
     

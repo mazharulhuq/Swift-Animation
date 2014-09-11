@@ -37,6 +37,7 @@ class SecondViewController: UIViewController {
             center.y -= 300
             self.myView.center = center
             self.myView.backgroundColor = UIColor.blueColor()
+            
             UIView.animateWithDuration(self.duration, delay: self.delay, options:option,
                 animations: {
                     var center = self.myView.center
