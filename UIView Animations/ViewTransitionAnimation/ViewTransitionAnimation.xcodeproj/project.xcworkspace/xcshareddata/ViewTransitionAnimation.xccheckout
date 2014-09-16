@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>181FF3CF-5405-42FE-BDAE-9574208742F4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ViewTransitionAnimation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0E545055440D6B1FAEFE8D77B6B5A71AB432F29A</key>
+		<string>https://github.com/mazharulhuq/Swift-Animation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UIView Animations/ViewTransitionAnimation/ViewTransitionAnimation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0E545055440D6B1FAEFE8D77B6B5A71AB432F29A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mazharulhuq/Swift-Animation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0E545055440D6B1FAEFE8D77B6B5A71AB432F29A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0E545055440D6B1FAEFE8D77B6B5A71AB432F29A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Swift-Animation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -30,6 +30,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(sender: AnyObject) {
         CATransaction.setAnimationDuration(3.0)
+        
         let timingFunction = CAMediaTimingFunction(controlPoints:
                                              0.9, 0.1, 0.5, 0.8)
         CATransaction.setAnimationTimingFunction(timingFunction)

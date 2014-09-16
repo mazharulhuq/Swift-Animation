@@ -17,6 +17,8 @@ class FirstViewController: UIViewController {
     var duration = 2.0
     var delay = 0.0
     var verticalMove: Bool = true
+    var beginFromCurrentState = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +54,23 @@ class FirstViewController: UIViewController {
 
     }
 
+    func animate(){
+        
+        UIView.animateWithDuration(2.0,animations: {
+            var center = self.myView.center
+            center.y -= 300
+            self.myView.center = center
+            self.myView.backgroundColor = UIColor.blueColor()
+            }, completion:nil)
+        
+        UIView.animateWithDuration(2.0,animations: {
+            var center = self.myView.center
+            center.y += 600
+            self.myView.center = center
+            self.myView.backgroundColor = UIColor.greenColor()
+            }, completion:nil)
+    }
+
 
     @IBAction func changeDuration(sender: AnyObject) {
         let slider = sender as UISlider
@@ -73,7 +92,14 @@ class FirstViewController: UIViewController {
 
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        let opt = UIViewAnimationOptions.allZeros
+        var opt:UIViewAnimationOptions!
+        if beginFromCurrentState{
+            println("Hello")
+            opt = UIViewAnimationOptions.BeginFromCurrentState
+        }
+        else{
+            opt = UIViewAnimationOptions.allZeros
+        }
         animate(opt)
     }
     
@@ -91,5 +117,16 @@ class FirstViewController: UIViewController {
         
     }
     
+    @IBAction func chooseOption(sender: AnyObject) {
+        let onOff = sender as UISwitch
+        if onOff.on {
+            beginFromCurrentState = true
+        }
+        else{
+            beginFromCurrentState = false
+        }
+        myView.center = CGPointMake(100, 400)
+        myView.backgroundColor = UIColor.redColor()
+    }
 }
 

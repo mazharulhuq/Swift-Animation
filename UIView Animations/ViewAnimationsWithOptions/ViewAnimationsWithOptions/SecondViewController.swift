@@ -44,7 +44,8 @@ class SecondViewController: UIViewController {
             self.myView.backgroundColor = UIColor.greenColor()
             }, completion:nil)
     }
-
+    
+    
     @IBAction func chooseOption(sender: AnyObject) {
         //Optional variable for the options parameter 
         var opt:UIViewAnimationOptions!
@@ -62,8 +63,7 @@ class SecondViewController: UIViewController {
                opt = UIViewAnimationOptions.Repeat
            case 2:
               //Combination of Repeat and Autoreverse
-              opt = UIViewAnimationOptions.Autoreverse
-                        | UIViewAnimationOptions.Repeat
+              opt = UIViewAnimationOptions.Autoreverse|UIViewAnimationOptions.Repeat
         default:
             println("Should not be here")
         }
@@ -74,12 +74,11 @@ class SecondViewController: UIViewController {
     @IBAction func cancelAnimation(sender: AnyObject) {
         //Animation to restore the myView initial state
         UIView.animateWithDuration(0.5,delay: 0,
-            options:UIViewAnimationOptions.BeginFromCurrentState,
-                                                    animations: {
-            
-            self.myView.center = self.originalPosition
-            self.myView.backgroundColor = self.originalColor
-            }, completion:nil)
+                options:UIViewAnimationOptions.BeginFromCurrentState,
+                animations: {
+                      self.myView.center = self.originalPosition
+                      self.myView.backgroundColor = self.originalColor
+               }, completion:nil)
         
         //Unselects segment selected
         segmentControl.selectedSegmentIndex = -1

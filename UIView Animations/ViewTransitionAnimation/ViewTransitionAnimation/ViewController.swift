@@ -51,21 +51,21 @@ class ViewController: UIViewController {
     func animate(index:Int){
         
         if index == 0{
-            UIView.transitionWithView(imageView, duration: 2, options: UIViewAnimationOptions.TransitionFlipFromBottom, animations:{
-                
-                if self.imageIndex == 0 {
+            UIView.transitionWithView(imageView, duration: 2, options: UIViewAnimationOptions.TransitionCurlDown, animations:{
+                  if self.imageIndex == 0 {
                     self.imageView.image = UIImage(named: "alaska2")
                     self.imageIndex = 1
-                }
-                else if self.imageIndex == 1{
+                  }
+                  else if self.imageIndex == 1{
                     self.imageView.image = UIImage(named: "alaska3")
                     self.imageIndex = 2
-                }
-                else if self.imageIndex == 2{
+                  }
+                  else if self.imageIndex == 2{
                     self.imageView.image = UIImage(named: "alaska1")
                     self.imageIndex = 0
-                }
-                }, completion: nil)
+                  }
+
+            }, completion: nil)
             
             UIView.transitionWithView(view1, duration: 2, options: UIViewAnimationOptions.TransitionFlipFromLeft, animations:{
                 if self.view1.reverse == 1{
@@ -89,16 +89,14 @@ class ViewController: UIViewController {
                 else{
                     f.origin.x = 0
                 }
+                self.view3.frame = f
                 
-                
-                self.view3.frame = f;
                 }, completion: nil)
             
         }
         else{
             
             let label = UILabel(frame: displayLabel.frame)
-            
             label.font  = UIFont(name: "Helvetica", size: 36)
             if displayLabel.text == "Hello"{
                 label.backgroundColor = UIColor.greenColor()
@@ -108,11 +106,9 @@ class ViewController: UIViewController {
                 label.backgroundColor = UIColor.yellowColor()
                 label.text = "Hello"
             }
-            
             label.textAlignment = NSTextAlignment.Center
             
             UIView.transitionFromView(displayLabel, toView: label, duration: 2.0, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
-            
             displayLabel = label
             
         }

@@ -46,7 +46,7 @@
                                     <constraint firstAttribute="width" constant="50" id="g4q-Je-Vw3"/>
                                 </constraints>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="58" y="50" width="50" height="50"/>
+                                    <rect key="frame" x="60" y="48" width="50" height="50"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -56,7 +56,9 @@
                             <constraint firstItem="9hD-AG-eWH" firstAttribute="leading" secondItem="pTT-6R-Zdm" secondAttribute="trailing" constant="13" id="MNq-pK-syu"/>
                             <constraint firstItem="pTT-6R-Zdm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Otj-J7-8hX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iwi-gP-iqV" secondAttribute="bottom" constant="100" id="lFV-WQ-ECF"/>
-                            <constraint firstItem="jcL-Nx-a4D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="mGo-Hw-eaC"/>
+                            <constraint firstItem="jcL-Nx-a4D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="mGo-Hw-eaC">
+                                <variation key="heightClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9hD-AG-eWH" secondAttribute="bottom" constant="100" id="q0z-aC-bHz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pTT-6R-Zdm" secondAttribute="bottom" constant="100" id="sNe-HJ-rTQ"/>
                             <constraint firstItem="jcL-Nx-a4D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="tdh-cm-6E0"/>

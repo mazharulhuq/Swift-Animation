@@ -11,15 +11,13 @@ import UIKit
 class SecondViewController: UIViewController {
                             
     @IBOutlet weak var myView: UIView!
-    
     @IBOutlet weak var durationLabel: UILabel!
-    
     @IBOutlet weak var delayLabel: UILabel!
-    
     
     var duration = 2.0
     var delay = 0.0
     var verticalMove: Bool = true
+    var defaultDuration = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +29,7 @@ class SecondViewController: UIViewController {
     }
     
     func animate(option:UIViewAnimationOptions){
-        
+       
         UIView.animateWithDuration(2.0,animations: {
             var center = self.myView.center
             center.y -= 300
@@ -53,7 +51,7 @@ class SecondViewController: UIViewController {
             
             }, completion:nil)
     }
-    
+
     
     @IBAction func changeDuration(sender: AnyObject) {
         let slider = sender as UISlider
@@ -75,7 +73,14 @@ class SecondViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        let opt = UIViewAnimationOptions.allZeros
+        var opt:UIViewAnimationOptions!
+        if defaultDuration{
+            opt = UIViewAnimationOptions.OverrideInheritedDuration
+        }
+        else{
+            opt = UIViewAnimationOptions.allZeros
+        }
+
         animate(opt)
     }
     
@@ -91,6 +96,19 @@ class SecondViewController: UIViewController {
         myView.center = CGPointMake(100, 400)
         myView.backgroundColor = UIColor.redColor()
         
+    }
+    
+    @IBAction func chooseOption(sender: AnyObject) {
+        
+        let onOff = sender as UISwitch
+        if onOff.on {
+            defaultDuration = true
+        }
+        else{
+            defaultDuration = false
+        }
+        myView.center = CGPointMake(100, 400)
+        myView.backgroundColor = UIColor.redColor()
     }
     
 

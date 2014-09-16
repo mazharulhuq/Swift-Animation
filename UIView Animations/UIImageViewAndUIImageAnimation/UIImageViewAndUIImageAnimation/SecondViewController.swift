@@ -43,8 +43,7 @@ class SecondViewController: UIViewController {
     
     @IBAction func startAnimation(sender: AnyObject) {
         //Animating UIImageView by loading an animated image
-        let animatedImage:UIImage = UIImage.animatedImageNamed("alaska",
-            duration: 5.0)
+        let animatedImage:UIImage = UIImage.animatedImageNamed("alaska",duration: 5.0)
         imageView.image = animatedImage
         
         //Animate image from the array using a UIImage class method

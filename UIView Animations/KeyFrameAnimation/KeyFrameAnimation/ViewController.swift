@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         var center: CGPoint = myView.center
         let opts:UIViewKeyframeAnimationOptions =
-        UIViewKeyframeAnimationOptions.CalculationModeCubic
+                    UIViewKeyframeAnimationOptions.CalculationModeCubic
         
         UIView.animateKeyframesWithDuration(duration, delay: 0, options: opts, animations: {
             

@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     }
     
     override func  viewDidAppear(animated: Bool) {
+        
         originalCenter = myView.center
         originalBounds = myView.bounds
         originalColor = myView.backgroundColor
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
             completionOption = false
         }
         //Restore the center and background color to initial values
+        
         myView.center = originalCenter
         myView.bounds = originalBounds
         myView.backgroundColor = originalColor
@@ -59,9 +61,11 @@ class ViewController: UIViewController {
             self.myView.bounds = CGRectMake(0, 0, 100, 100)
             self.myView.backgroundColor = UIColor.blueColor()
         })
+        
     }
     
     func animateWithReturn(){
+   
         UIView.animateWithDuration(5.0,animations: {
             var center = self.myView.center
             UIView.performWithoutAnimation({
@@ -78,6 +82,8 @@ class ViewController: UIViewController {
                 self.myView.bounds = self.originalBounds
                 self.myView.backgroundColor = self.originalColor
         })
+        
+        
     }
 
     @IBAction func buttonPressed(sender: AnyObject) {
@@ -86,7 +92,6 @@ class ViewController: UIViewController {
             animateWithReturn()
             }
         else{
-            
             simplAnimation()
             }
     }
